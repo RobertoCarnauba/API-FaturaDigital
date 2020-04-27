@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="cartaocaedu.css">
+	<title>cartao-caedu</title>
+</head>
+
+<body>
+	<div id="wrap_card">
+		<form autocomplete="off" action="https://avantisys3.marketpay.com.br/LoginModuloCliente?acao=login" name="form1"
+			id="form1" method="post" target="framePanel">
+			<input type="hidden" name="acao" value="login">
+			<input type="hidden" name="isSemMenu" value="S">
+			<input type="hidden" name="podeLogarConv" value="">
+			<input type="hidden" name="podeLogarAdm" value="">
+			<input type="hidden" name="codigoEmprestimo" value="">
+			<input type="hidden" name="tipoAcessoModCliente" id="tipoAcessoModCliente" value="CP">
+
+
+			<div class="item_ckeck">
+				<h3>Consulte seu limite, saldo e faturas</h3>
+				<!-- <h4>Entrar com:</h4> -->
+			</div>
+
+			<div class="item">
+				<!-- <input type="radio" name="documento" id="cartao" value="CT" required="" checked="">
+				<label for="cartao" id="cartaoLabel">Cartão Caedu</label> -->
+				<!-- <input type="radio" name="documento" id="cpf" value="CP" required="">
+				<label for="cpf" id="cpfLabel">CPF</label> -->
+			</div>
+
+			<div class="row">
+				<div class="column inputs">
+					<div class="item half">
+						<input name="campoLogin" id="campoLogin" maxlength="14" type="text" size="18" tabindex="1"
+							placeholder="Digite aqui o número do CPF">
+					</div>
+					<div class="item half">
+						<input id="campoSenha" name="senha" type="password" size="18" maxlength="6" tabindex="2"
+							placeholder="Digite sua senha">
+					</div>
+					<button class="button-inner">Esqueci minha senha</button>
+					<input type="submit" name="button" class="enviar" value="Entrar"><br>
+					<button class="button-inner">CRIAR NOVA CONTA</button>
+				</div>
+				<div class="column">
+					<div id="img_card_w">
+						<img src="_imgs/img-cartao-caedu.png" alt="cartão com mulher">
+					</div>
+				</div>
+
+
+			</div>
+		</form>
+	</div>
+</body>
+<script>
+
+function fMasc(objeto, mascara) {
+    obj = objeto
+    masc = mascara
+    setTimeout("fMascEx()", 1)
+}
+function fMascEx() {
+    obj.value = masc(obj.value)
+}
+function mCPF(cpf) {
+    cpf = cpf.replace(/\D/g, "")
+    cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
+    cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
+    cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2")
+    return cpf
+}
+
+
+</script>
+
+</html>

@@ -1,0 +1,11 @@
+document.getElementById('checkboxemail').addEventListener('change', (event) => {
+    if(document.getElementById('checkboxemail').checked == true){
+        document.getElementById('checkboxsms').checked = false
+    }
+})
+
+document.getElementById('checkboxsms').addEventListener('change', (event) => {
+    if(document.getElementById('checkboxsms').checked == true){
+        document.getElementById('checkboxemail').checked = false
+    }
+})

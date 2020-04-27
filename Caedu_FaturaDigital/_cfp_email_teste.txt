@@ -1,0 +1,14 @@
+senha:caedu_fatura 
+caedufaturacancelamento@gmail.com
+
+
+fvmsegundo@gmail.com
+cpf 05112943440
+id 2011702
+cell "id": 12765068
+051.129.434.40
+idProfissao: 82
+dataNascimento: "1982-11-11",
+
+cpf:06723728432
+dataNascimento: 18-07-1985

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caedu_input_validação</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <input type="text" id="sender_ad_date" data-role="date" max="10">
+
+    </div>
+    <div id="msn_erro"></div>
+</body>
+
+<style>
+    .container {
+        width: 110px;
+        overflow: hidden;
+        border: 1px solid black;
+    }
+
+    #sender_ad_date {
+        width: 125px;
+        border: 0px none transparent;
+    }
+
+    #sender_ad_date::-webkit-calendar-picker-indicator,
+    #sender_ad_date::-webkit-inner-spin-button {
+        display: none;
+    }
+</style>
+
+
+
+<script>
+
+    var m = document.getElementById("msn_erro")
+    document.getElementById("sender_ad_date").addEventListener('mouseout', function () {
+        let ipt = document.getElementById("sender_ad_date")
+
+        let data = ipt.value; // pega o valor do input
+        let ano = data.substr(6, 4)
+        var dia = data.substr(0, 2)
+        var mes = data.substr(3, 2)
+        var newDate = data.split('-').reverse().join('/')
+
+        var dateNow = new Date().toLocaleDateString();
+        let ano_n = dateNow.substr(6, 4)
+        let ano_sub = ano_n - 15
+
+        try {
+            if (ano > 1940 && ano <= ano_sub && dia <= 31 && mes <= 12) {
+                m.innerHTML = "Data  valida"
+                ipt.value = ""
+            } else {
+                m.innerHTML = "Data não valida"
+                ipt.value = ""
+            }
+
+        }
+        catch{
+            console.log("same error")
+        }
+
+    })
+
+    document.getElementById("sender_ad_date").addEventListener('mouseover', function () {
+        m.innerHTML = ""
+    })
+
+    let data = document.getElementById("sender_ad_date")
+    data.onkeyup = (event) => {
+        mascaraDate(data, event).then(() => {
+            data.value.replace('/\/\//', '/')
+            if (data.value.length == 3) {
+                let v = parseInt(data.value.replace('/', ''))
+                if (v <= 0 || v >= 32) {
+                    data.style.borderColor = 'red'
+                } else {
+                    data.style.borderColor = '#b1b1b1'
+                }
+            } else if (data.value.length == 6) {
+                let v1 = data.value.split('')
+                let v3 = parseInt(v1[3] + v1[4])
+                if (v3 <= 0 || v3 >= 13) {
+                    data.style.borderColor = 'red'
+                } else {
+                    data.style.borderColor = '#b1b1b1'
+                }
+            }
+        })
+    }
+    function mascaraDate(d, e) {
+        return new Promise((res, rej) => {
+            d.value.replace('/\/\//', '/')
+            if (e.keyCode != 8 && e.keyCode != 46) {
+                if (d.value.length == 2) {
+                    d.value += '/'
+                    res()
+                } else if (d.value.length == 5) {
+                    d.value += '/'
+                    res()
+                } else if (d.value.length == 3) {
+                    let m = d.value.split('')
+                    d.value = m[0] + m[1] + '/' + m[2]
+                    res()
+                } else if (d.value.length == 6) {
+                    let m = d.value.split('')
+                    d.value = m[0] + m[1] + m[2] + m[3] + m[4] + '/' + m[5]
+                    res()
+                }
+            }
+        })
+    }
+    let data_max = document.getElementById("sender_ad_date")
+    data_max.oninput = function () {
+        if (this.value.length > 10) {
+            this.value = this.value.slice(0, 10);
+        }
+    }
+
+
+</script>
+
+</html>

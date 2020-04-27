@@ -1,0 +1,1140 @@
+
+.pdfobject-container { 
+     height: 30rem;
+     border: 1rem solid rgba(0,0,0,.1);
+     width: 30rem;
+}
+
+.modal-content{
+    width: 690px;
+    margin-left: -89px;
+}
+#example1{
+    width: 661px; 
+}
+
+#erro_server{
+    margin-top: -52px;
+    color: red;
+    font-weight: 600; 
+}
+
+
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #c3c00f;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    display: none;
+  }
+
+  #message_error{
+    font-weight: 700;
+    color: red;
+    margin-left: 236px; 
+  }
+
+  #message_email{
+    font-weight: 700;
+    color: red;
+    margin-left: 239px; 
+  }
+
+  #alert_termo{
+    position: relative;
+    top: -27px;
+    left: 64px;
+    color: red;
+    font-weight: 700;
+  } 
+
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  
+
+header {
+    border-top: 0.8em solid #656F78;
+    background-color: #BBB910;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    padding-bottom: 1.5em;
+}
+
+.mywrap{
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.indent{
+    text-align: center;
+    background-color: #848C93;
+    color: #FFF;
+    padding: 4em 0;
+    border-radius: 5px;
+    margin-top: 5em;
+    left: 0.2em;
+    position: relative;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+    border-bottom-style: inset;
+    z-index: 1;
+    width: 68.1em;
+}
+
+.indent_cancelar{
+    text-align: center;
+    background-color: #BBB910;
+    color: #FFF;
+    padding: 4em 0;
+    border-radius: 5px;
+    margin-top: 5em;
+    left: 0.2em;
+    position: relative;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+    border-bottom-style: inset;
+    z-index: 1;
+    width: 70.1em;
+    height: 22em;
+}
+
+.indent_cancelar span{
+    font-weight: 700;
+}
+.btn-voltar{
+    background-color: #656F78;
+    padding: 0.4em 4em;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+#btnFaturaDigital{
+    width: 403px;
+    margin-top: 11px;
+    margin-bottom: 63px;
+    border-radius: 6px;
+    left: 22%;
+    background-color: #5e6a71;
+    color: #c3c00f;
+    font-weight: 800;
+    padding: 10px;  
+}
+
+
+
+.indent h3{
+    text-transform: uppercase;
+}
+.grade-form {
+    border: 1px solid #D0D0D0;
+    border-radius: 5px;
+    left: -12px;
+    width: 98%;
+    position: relative;
+    border-top: none;
+   
+}
+
+.btn_caedu{
+    position: absolute;
+    left: 364px;
+    bottom: 7px;
+    right: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    width: 15em;
+    background-color: #656F78;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+.btn_caedu_index{
+    position: absolute;
+    left: 498px;
+    bottom: 7px;
+    right: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    width: 15em;
+    background-color: #656F78;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+.btn_caedu_faq{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 465px;
+    /* font-size: 0.8em; */
+    border-radius: 5px;
+    border: none;
+    width: 10em;
+    background-color: #656F78;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-family: "Avenir Next Demi Bold";
+}
+
+#btnCancelar{
+    position: relative;
+    left: 20%;
+    top: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    width: 170px;
+    height: 50px;
+}
+
+#selec_cancelar{
+    background-color: #FFF ;
+    border-radius: 5px;
+    
+}
+
+.m_cancelar{
+    border-radius: 5px;
+    width: 311px;
+    margin-top: 20px; 
+    display: none;
+}
+
+#divErro{
+    font-weight: 700;
+    color: red;
+    margin-top: -20px;
+    margin-bottom: 6px;
+    margin-left: 40px; 
+}
+
+.check_cancelar{
+    font-family: Arial,sans-serif!important;
+}
+
+.card_caedu{
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+.card_caedu p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #666;
+    font-family: 'AvenirMedium';
+}
+
+
+/* '.figure_caedu{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #bab232;
+    margin: 50px
+}' */
+
+.figure_caedu img{
+    position: relative;
+    left: 41px;
+    top: 21px;
+    max-width: 60%;
+    margin-bottom: 12px; 
+}
+
+#faqstyle{
+
+}
+
+.greey_dark{
+    min-width: 100%;
+    position: relative;
+    /* border: 1px solid; */
+    border-left: 1px solid #d2c5c5;
+    border-right: 1px solid #d2c5c5;
+    padding: 35px;
+    background-color: #ecebeb;
+}
+
+.greey_dark p {
+    margin-top: 7px;
+}
+.greey_dark span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.greey_claro{
+    min-width: 100%;
+    position: relative;
+    /* border: 1px solid; */
+    border-left: 1px solid #d2c5c5;
+    border-right: 1px solid #d2c5c5;
+    padding: 35px;
+    /* background-color: #ecebeb; */
+}
+
+.somewhere{
+    margin-bottom: -8px;
+    /* width: 1096px; */
+    margin-left: -4px;
+}
+
+.greey_claro p{
+    margin-top: 7px;
+}
+.greey_claro span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+.faq-link {padding-left:30px !important}
+.newsletter a:focus {color:#666!Important}
+
+.menu-top-menu-cartao-caedu-container {
+    width: 85% !important;
+}
+.menu-top-menu-cartao-caedu-container {
+    position: relative !important;
+    width: 1200px !important;
+    margin: 0 auto !important;
+    max-height: 200px !important;
+    top:-50px
+}
+
+.bwp-recent-post.slider .block_content {
+    margin: 0 -15px !important;
+    max-height: 500px !important;
+}
+
+#message_fatura{
+    margin-left: 242px;
+    color: red;
+    font-weight: 700;
+}
+
+.btn-entrar{
+    top: 120px;
+    width: 405px;
+    left: 22%;
+    background-color: #5e6a71;
+    color: #c3c00f;
+    font-weight: 800;
+    padding: 10px; 
+}
+
+.porque {
+    background-color: #BBB910;
+    border-radius: 5px;
+    color: #FFF;
+    height: 27em;
+    width: 23% !important;
+    margin: 0 5px;
+}
+.txt-motivo {
+    padding-top: 1.5em;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+hr {
+    margin-top: 73px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1.3px solid #A9A703;
+    width: 100%;
+}
+.txt-pq-melhor {
+    line-height: 25px;
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    color: #656F78;
+    font-family: 'AvenirBold !important';
+    padding-bottom: 25px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-align: center !important;
+    /* float: left; */
+    color: #666 !important;
+    font-family: 'AvenirBold' !important;
+
+}
+.btn-caedu-pergunta {
+    font-size: 0.9em;
+    font-family: "Avenir Next Demi Bold";
+    border-radius: 5px;
+    border: none;
+    width: 16em;
+    background-color: #656F78;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+
+
+.ftd h3{
+    font-weight: 700;
+}
+
+.ftd span{
+    font-weight: 700;
+}
+
+.ftd-form h2{
+    color: #c3c00f;
+    font-size: 25px;
+    font-size: 1.25rem;
+    position: relative;
+    left: 241px;
+}
+.ftd-form span{
+    font-weight: 700;
+}
+
+
+.emailftd{
+    position: relative;
+    left: 116px;
+    bottom: 17px;
+}
+
+#checkboxemail, #aceitosms{
+    position: relative;
+    left: 77px;
+    top: 54px;
+
+}
+#checkboxsms{
+    position: relative;
+    top: 54px;
+}
+
+
+
+.mywrapp{
+    margin: auto;
+    width: 60%;
+    left: 15%;
+}
+.mywrapp ftd{
+    margin: auto;
+    width: 100%;
+}
+
+#emailFatDigital, #emailFatDigitalConfir{
+    min-width: 18rem;
+    border-radius: 3px;
+    
+}
+#emailFatDigital{
+    margin-bottom: 11px;
+}
+
+.inputsemail{
+    position: relative;
+    left: 147px;;
+    border-radius: 3px;
+}
+
+.inputsemail label{
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+#smsFatDigitalDD, #smsFatDigitalConfirDD{
+    max-width: 40px;
+    border-radius: 3px;
+}
+#smsFatDigitalDD, #smsFatDigital, #smsFatDigitalConfir{
+    margin-bottom: 11px;
+    border-radius: 3px;
+    
+}
+
+#aceitosms{
+    position: relative;
+    left: 0px;
+    top: 64px;
+}
+.labelcheck{
+    position: relative;
+    left: 35px;
+    top: 54px;
+
+}
+
+.btncancelar{
+    position: relative;
+    top: 60px;
+    width: 536px;
+    left: 19px;
+    font-size: 13px;
+    padding: 8px 0;
+    border: 0px none;
+    background: #eeeeee;
+}
+.btnconfir{
+    position: relative;
+    top: 30px;
+    width: 405px;
+    left: 14%;
+    background-color: #5e6a71;
+    color: #c3c00f;
+    font-weight: 800;
+    padding: 10px;
+    margin-bottom: 98px;
+}
+
+.terAdd{
+    position: relative;
+    top: 94px;
+    font-size: small;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.terAdd a{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+.btncancelar a{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+.labelcheck a{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+   
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .btn_caedu {
+        right: 29%;
+        bottom: -51px;
+        margin-left: -147px;
+    }
+    .h2why{
+        margin-top: 110px!important;
+        font-size: 26px;
+    }
+    .ftd-form h2 {
+        left: 0px;
+    }
+    .btnconfir {
+        left: 0%;
+    
+    }
+    .inputsemail {
+        left: 166px;
+    }
+    .btncancelar {
+        left: 0px;
+        
+    }
+    .btn_caedu_index{
+        left: 66px;
+        bottom: -65px;  
+    }
+
+    .figure_caedu img {
+        left: 21px;
+        max-width: 73%;
+    }
+    #message_error {
+        margin-left: 227px;
+    }
+
+
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 571px) and (max-width: 767px) {
+    
+    .caedulogo{
+        width: 40%;
+        margin-right: 27%;
+        margin-bottom: 13px;
+    }
+
+    .fatdig{
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 25px;
+    }
+
+    header{
+        margin-bottom: -54px; 
+    }
+
+    
+
+    .grade-form {
+        width: 104%!important;
+        left: -4px;
+    }
+
+    .form-control {
+        display: block;
+        width: 85%;
+        margin-left: 44px;
+    }
+
+    label {
+        margin-left: 28px;
+    }
+
+    #btnFaturaDigital {
+        width: 84%;
+        margin-left: 14%;
+    }
+    .btn_caedu {
+        margin-left: -199px;
+    }
+    .btn_caedu_index{
+        left: 66px;
+        bottom: -65px;  
+    }
+
+    .figure_caedu img {
+        left: -19px;
+    }
+    p{
+        width: 86%;
+        margin-left: 26px;
+    }
+
+    .h2why{
+        margin-top: 110px!important;
+        font-size: 32px;;
+    }
+
+    .card_caedu{
+        padding-left: 0px; 
+        padding-right: 0px;
+    }
+    .figure_caedu{
+        margin-left: 36%;
+        
+    }
+     /* === addfatura === */
+     #message_error {
+        margin-left: 104px;
+    }
+     .ftd-form h2 {
+        left: 0px;
+    }
+    .btncancelar {
+        left: 0px;
+    }
+    .btnconfir{
+        left: 0px;
+    }
+    .inputsemail {
+        left: 43px;
+    }
+    .emailftd {
+        left: -34px;
+    }
+    #checkboxemail, #aceitosms {
+        left: -63px;
+    }
+    #checkboxsms {
+        left: -66px!important; 
+    }
+    .labelcheck {
+        left: 0px;
+    }
+
+    .somewhere {
+        width: 100%;
+    }
+    .btn_caedu_faq {
+        margin-left: 0px;
+    }
+    
+   
+  /* === Adesaosucesso === */
+  .indent_cancelar {
+    height: 31em!important;
+    }
+    .btn-voltar {
+        margin-top: 7px;
+    }
+  
+     /* === cancelar === */
+     .ul_cancelar{
+        
+        width: 90%;
+    }
+
+    .indent h3{
+        font-size: 19px;
+    }
+    .greey_dark span {
+        margin-left: 24px;
+    }
+    .greey_claro span {
+        margin-left: 24px;
+    }
+   
+  }
+
+  
+    
+    
+  
+  
+  
+  @media (min-width: 415px) and (max-width: 570px) {
+    #faqstyle{
+        left: 0.2em;
+    }
+    .greey_dark span {
+        margin-left: 24px;
+    }
+    .greey_claro span {
+        margin-left: 24px;
+    }
+    .indent {
+        left: 1.2em;
+    }
+    .modal-open{
+        width: 26rem;
+        height: 49rem;
+    }
+    #alert_termo {
+        top: -80px;
+        left: 9px;
+        font-size: 11px;
+    }
+    #message_email {
+        margin-left: 22px;
+    }
+    
+    .caedulogo{
+        width: 40%;
+        margin-right: 27%;
+        margin-bottom: 13px;
+    }
+
+    .fatdig{
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 25px;
+    }
+
+    header{
+        margin-bottom: -54px; 
+    }
+
+    
+
+    .grade-form {
+        width: 104%!important;
+        left: -4px;
+    }
+
+    .form-control {
+        display: block;
+        width: 85%;
+        margin-left: 44px;
+    }
+
+    label {
+        margin-left: 0px;
+    }
+    .labelcheck {
+        left: 26px;
+    }
+
+    #btnFaturaDigital {
+        width: 84%;
+        margin-left: 14%;
+    }
+
+    #aceitosms {
+        position: relative;
+        left: 0px;
+        top: 73px;
+    }
+    .btn_caedu {
+       margin-left: -190px;
+     }
+
+    .btn_caedu_index{
+        left: 66px;
+        bottom: -65px;  
+    }
+
+    .figure_caedu img {
+        left: 7px;
+    }
+    p{
+        width: 86%;
+        margin-left: 21px;
+    }
+
+    .h2why{
+        margin-top: 110px!important;
+        margin-left: 73px;
+    }
+
+    .card_caedu{
+        padding-left: 0px; 
+        padding-right: 0px;
+    }
+    .figure_caedu{
+        margin-left: 36%;
+        
+    }
+
+    /* === addfatura === */
+    #message_error {
+        margin-left: 73px;
+    }
+    .inputsemail {
+        position: relative;
+        left: -10px;
+        border-radius: 3px;
+        margin-bottom: 115px;
+        bottom: -124px;
+    }
+    .ftd-form h2 {
+        left: 42px;
+    }
+    .btncancelar {
+        left: 19px;
+    }
+    .btnconfir {
+        left: 9%;
+    }
+
+    hr {
+        margin-left: 27px;
+    }
+
+    /* === Adesaosucesso === */
+    .indent_cancelar {
+        height: 33em!important;
+    }
+    .btn-voltar {
+        margin-top: 10px;
+    }
+
+    /* === cancelar === */
+    .ul_cancelar{
+        
+        width: 90%;
+    }
+
+    .indent h3{
+        font-size: 19px;
+    }
+
+    .somewhere {
+        width: 100%;
+    }
+    .btn_caedu_faq {
+        margin-left: 0px;
+    }
+
+    .modal {
+        width: 80%!important;
+        left: 10%!important;
+    }
+    .modal-title{
+        width: 356px;
+        margin-left: 74px;
+        font-size: 15px; 
+    }
+   
+  }
+
+  
+ 
+
+/* media */
+@media (max-width: 414px) {
+
+    .modal {
+        width: 80%!important;
+        left: 10%!important;
+    }
+    .modal-footer button{
+        margin-right: 55%!important;
+    }
+
+    #alert_termo {
+        top: -75px;
+        left: 20px;
+        font-size: 12px;
+    }
+    .caedulogo{
+        width: 40%;
+        margin-right: 27%;
+        margin-bottom: 13px;
+    }
+
+    .fatdig{
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 25px;
+    }
+
+    header{
+        margin-bottom: -54px; 
+    }
+
+    
+
+    .grade-form {
+        width: 104%!important;
+        left: -4px;
+    }
+
+    .form-control {
+        display: block;
+        width: 85%;
+        margin-left: 44px;
+    }
+
+    label {
+        margin-left: 28px;
+    }
+
+    #btnFaturaDigital {
+        width: 84%;
+        margin-left: 14%;
+    }
+    .btn_caedu {
+        right: 16%;
+        bottom: -51px;
+        left: 60px;
+    }
+    .btn_caedu_index{
+        left: 66px;
+        bottom: -65px;  
+    }
+
+    .figure_caedu img {
+        left: -19px;
+    }
+    
+    p{
+        width: 86%;
+        margin-left: 26px;
+    }
+
+    .h2why{
+        margin-top: 110px!important;
+        font-size: 28px;
+    }
+
+    .card_caedu{
+        padding-left: 0px; 
+        padding-right: 0px;
+    }
+    .figure_caedu{
+        margin-left: 36%;
+        
+    }
+
+    
+
+   /* ==== addfatura ==== */
+
+    .mywrapp {
+        width: 100%;
+    }
+
+    .ftd-form h2 {
+        left: 47px;
+        margin-left: 44px;
+        position: static!important;
+    }
+
+    .emailftd {
+        left: 128px;
+        top: -1px;
+        max-width: 82px;
+    }
+
+    .inputsemail {
+        margin-left: 52px;
+    left: 0;
+    }
+
+    #checkboxemail {
+        left: 85px;
+        top: 51px;
+
+    }
+
+    
+
+    #checkboxsms{
+        top: 51px;
+        left: 94px!important;
+    }
+
+    #emailFatDigital, #emailFatDigitalConfir {
+        min-width: 2rem;
+        margin-left: 30px;
+    }
+
+    .ftd p{
+        width: 82%;
+    }
+
+    .btncancelar {
+        width: 356px;
+        left: 7px;
+        font-size: 13px;
+    }
+    .btnconfir {
+        width: 216px;
+        left: 20%;
+    }
+
+    .labelcheck {
+        left: -19px;
+    }
+
+    .aceito{
+        margin-bottom: 20px;
+        left: 178px!important;
+        bottom: 25px; 
+    }
+   
+
+    .labelemail{
+        margin-left: 50px;
+    }
+
+    #smsFatDigitalDD,#smsFatDigitalConfirDD{
+        margin-left: 10px;
+    }
+
+    .ddinside{
+        margin-left: 20px!important;
+    }
+
+    #message_email {
+        margin-left: 72px;
+    }
+
+    #message_error {
+        margin-left: 51px;
+    }
+
+    /* === Adesaosucesso === */
+
+    .indent_cancelar {
+        height: 39em!important;
+    }
+
+    .btn-voltar {
+        margin-top: 7px;
+    }
+
+
+    /* === cancelar === */
+    .ul_cancelar{
+        
+        width: 90%;
+    }
+
+    .indent h3{
+        font-size: 25px;
+    }
+
+    .somewhere {
+        width: 100%;
+    }
+
+    .btn_caedu_faq{
+        margin-left: 0px;
+    }
+    
+
+
+}

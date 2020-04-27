@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_caedu.css">
+    <title>Login Api-Caedu</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container text-center">
+            <div class="row ">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+                    <img src="_imgs/fatura-digital.png" class="img-fluid fatdig" alt="fatura-digital cartão caedu">
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right">
+                    <img src="_imgs/logo.png" class="img-fluid caedulogo" alt="Logo caedu">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="indent">
+                <img src="_imgs/identificacao_card.png" alt="Alternate Text">
+                <h3>Identificação</h3>
+                <p>
+                    Preencha os campos a baixo e clique em
+                    <strong>entrar</strong>
+                    para continuar com a adesão da sua fatura digital.
+                </p>
+            </div>
+        </div>
+        <article id="article-fatura-1" class="d-flex justify-content-center grade-form">
+
+            <div class="row " style="margin-top: 50px;">
+                <div class="loader"></div>
+                <div class="wrap_caedu">
+                    <div class="ftd ">
+                        <!-- <h1 class="text-center">Fatura Digital</h1>
+                        <p class="text-center">
+                            Prencha os campos abaixo e clique em entrar </br>para continuar com a adesão da sua fatura
+                            digital:
+                        </p> -->
+                    </div>
+
+                    <div id="divErro" role="alert"></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <form method="post" class="row" style="margin-left: 0px; margin-right: 0px;">
+                            <div class="form-group">
+                                <label class="fatura-label-cpf" for="txtCPF">
+                                    CPF do titular do Cartão:
+                                </label>
+                                <div id="alert_cpf" style="color: red; font-weight: 700;"></div>
+                                <input type="text" max="4" id="cpf" name="cpf"
+                                    onkeydown="javascript: fMasc( this, mCPF );"
+                                    class="fatura-digital-cpf-input form-control" placeholder="000.000.000.00" />
+
+                                <label class="fatura-label" for="txtDataNasc">
+                                    Data de nascimento do titular do Cartão:
+                                </label>
+                                <div id="alert_nasc" style="color: red; font-weight: 700;"></div>
+                                <input type="text" id="txtDataNasc" class="fatura-digital-data-input form-control"
+                                    placeholder="00/00/0000" />
+                                <div class="text-center">
+                                    <button type="button" id="btnFaturaDigital" class="btn_entra"
+                                        onclick="getConsulta(event);">Entrar</button>
+                                </div>
+                                <div id="erro_server"></div>
+                            </div>
+                            <button class="btn_caedu_index"   onclick="callFaqIndex(event)">Perguntas Frequentes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+
+        <div class="row d-flex justify-content-center">
+            <h2 class="h2why" style="text-align: center; color: #bab232;margin-top: 31px;">Por que a fatura digital é
+                melhor?</h2>
+        </div>
+        <div class="row ajuste">
+            <div class="col-md-3 col-xs-12">
+                <div class="card_caedu">
+                    <figure class="figure_caedu">
+                        <img src="_imgs/01.png" alt="">
+                    </figure>
+                    <p>
+                        Assim que sua <br>
+                        fatura é fechada,<br>
+                        ela é enviada<br>
+                        por e-mail ou SMS.<br>
+                    </p>
+                    <p style="text-align: center; color: #bab232; font-family: 'AvenirMedium';">
+                        É mais <br>
+                        agilidade.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="card_caedu">
+                    <figure class="figure_caedu">
+                        <img src="_imgs/02.png" alt="">
+                    </figure>
+                    <p>
+                        Você não corre <br>
+                        o risco com possíveis,<br>
+                        atrasos na entrega<br>
+                        da fatura física.<br>
+                    </p>
+                    <p style="text-align: center; color: #bab232; font-family: 'AvenirMedium';">
+                        É mais <br>
+                        comodidade.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="card_caedu">
+                    <figure class="figure_caedu">
+                        <img src="_imgs/03.png" alt="">
+                    </figure>
+                    <p>
+                        Você economiza <br>
+                        papel e colabora,<br>
+                        com o <br>
+                        meio ambiente.<br>
+                    </p>
+                    <p style="text-align: center; color: #bab232; font-family: 'AvenirMedium';">
+                        É mais <br>
+                        conscientização.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="card_caedu">
+                    <figure class="figure_caedu">
+                        <img src="_imgs/04.png" alt="">
+                    </figure>
+                    <p>
+                        É um serviço <br>
+                        gratuito,<br>
+                        você não paga<br>
+                        nada a mais.<br>
+                    </p>
+                    <p style="text-align: center; color: #bab232; font-family: 'AvenirMedium';">
+                        É mais benefícios <br>
+                        pra você.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+<script src="api_valida.js"></script>
+<script src="format.js"></script>
+
+</html>
